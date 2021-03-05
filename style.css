@@ -680,6 +680,23 @@ table {
     display: block;
   }
   .nav {
+  }
+  .nav__link:link {
+    display: initial;
+    font-size: 1.3rem;
+  }
+  .nav.sticky {
+    padding: 0 6rem;
+    padding-top: 0px;
+    padding-right: 6rem;
+    padding-bottom: 0px;
+    padding-left: 6rem;
+    margin-right: 5rem;
+  }
+  .operations__tab-container {
+    display: inline;
+  }
+  .header {
     padding: 0;
   }
 }
