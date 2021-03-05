@@ -371,7 +371,7 @@ h4 {
 /* SLIDER */
 .slider {
   max-width: 100rem;
-  height: 50rem;
+  height: 80rem;
   margin: 0 auto;
   position: relative;
 
@@ -697,6 +697,12 @@ table {
     display: inline;
   }
   .header {
+    padding: 0;
+  }
+  .operations__tab {
+    margin: 0;
+  }
+  .operations__content--active {
     padding: 0;
   }
 }
