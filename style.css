@@ -623,7 +623,7 @@ h4 {
   font-weight: 500;
 }
 
-.modal__form input {
+.modal__form * {
   font-size: 1.7rem;
   padding: 1rem 1.5rem;
   border: 1px solid #ddd;
