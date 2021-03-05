@@ -128,7 +128,7 @@ img {
 }
 
 .nav__logo {
-  height: 100%;
+  height: 8rem;
   transition: all 0.3s;
 }
 
@@ -621,6 +621,7 @@ h4 {
 .modal__form label {
   font-size: 1.7rem;
   font-weight: 500;
+  border: unset;
 }
 
 .modal__form * {
@@ -679,8 +680,6 @@ table {
   .nav__links {
     display: block;
   }
-  .nav {
-  }
   .nav__link:link {
     display: initial;
     font-size: 1.3rem;
@@ -705,4 +704,8 @@ table {
   .operations__content--active {
     padding: 0;
   }
+}
+.privacy {
+  padding: 10%;
+  font-size: medium;
 }
