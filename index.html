@@ -10,6 +10,10 @@
       href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Zero Apnea | Helping those in need.</title>
 
@@ -17,7 +21,7 @@
   </head>
   <body>
     <header class="header">
-      <nav class="nav">
+      <nav class="nav" id="myNav">
         <a href="index.html">
           <img
             src="img/logo.png"
@@ -27,22 +31,18 @@
             designer="Ian"
           />
         </a>
-        <ul class="nav__links">
-          <li class="nav__item">
-            <a class="nav__link" href="#section--1">About the Program</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#section--2">Get Involved</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#section--3">News & Media</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link nav__link--btn btn--show-modal" href="#"
-              >Donate</a
-            >
-          </li>
-        </ul>
+
+        <div class="nav__links">
+          <a class="nav__link" href="#section--1">About the Program</a>
+          <a class="nav__link" href="#section--2">Get Involved</a>
+          <a class="nav__link" href="#section--3">News & Media</a>
+          <a class="nav__link nav__link--btn btn--show-modal" href="#"
+            >Donate</a
+          >
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars" id="exceptThis"></i>
+        </a>
       </nav>
 
       <div class="header__title">
@@ -366,5 +366,22 @@
     <div class="overlay hidden"></div>
 
     <!-- <script src="script.js"></script> -->
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myNav");
+        if (x.className === "nav") {
+          x.className += " responsive";
+        } else {
+          x.className = "nav";
+        }
+      }
+      document.addEventListener(`click`, function (event) {
+        if (event.target != document.getElementById(`exceptThis`)) {
+          var x = document.getElementById("myNav");
+          x.className = "nav";
+          console.log("works");
+        }
+      });
+    </script>
   </body>
 </html>
