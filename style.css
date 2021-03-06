@@ -485,14 +485,12 @@ h4 {
 
 .testimonial__text {
   font-size: 1.7rem;
-  margin-bottom: 3.5rem;
   color: #666;
 }
 
 .testimonial__author {
-  margin-left: 3rem;
   font-style: normal;
-
+  margin: 10% 0;
   display: grid;
   grid-template-columns: 6.5rem 1fr;
   column-gap: 2rem;
