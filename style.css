@@ -134,6 +134,10 @@ img {
   list-style: none;
 }
 
+.nav__link {
+  padding: 0 10px;
+}
+
 .nav__item {
   margin-left: 4rem;
 }
@@ -384,7 +388,6 @@ h4 {
 .testimonial__author {
   font-style: normal;
   margin: 10% 0;
-  display: grid;
   grid-template-columns: 6.5rem 1fr;
   column-gap: 2rem;
 }
@@ -566,7 +569,7 @@ table {
   padding: 10%;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   table {
     padding: 0;
   }
@@ -612,9 +615,10 @@ table {
     background-color: ivory;
   }
   .nav.responsive .nav__links {
-    padding: 10%;
+    padding: 5%;
     border-radius: 25px;
-    margin-top: 100px;
+    margin-top: 200px;
+    margin-right: 25px;
   }
   .nav.responsive .icon {
     position: absolute;
@@ -628,19 +632,29 @@ table {
   }
   .header {
     padding: 0;
+    height: 50vh;
   }
+
   .header__title {
+    margin-top: 10rem;
     padding: 5%;
   }
-  .operations__tab-container {
-    display: inline;
+  .operations {
+    border-radius: 25px;
+    padding: 1rem;
   }
   .operations__tab {
     margin: 0;
+    display: none;
   }
-  .operations__content--active {
+  .operations__content {
     padding: 0;
+    display: grid;
+    grid-template-columns: 7rem 1fr;
+    column-gap: 3rem;
+    row-gap: 0.5rem;
   }
+
   .modal {
     max-width: 80%;
     max-height: 80%;
@@ -666,4 +680,9 @@ table {
 .privacy {
   padding: 10%;
   font-size: medium;
+  padding-top: 10rem;
+}
+
+#contact__form {
+  display: grid;
 }

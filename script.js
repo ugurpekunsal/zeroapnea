@@ -56,7 +56,10 @@ btnScrollTo.addEventListener("click", function (e) {
 
 document.querySelector(".nav__links").addEventListener("click", function (e) {
   e.preventDefault();
-
+  if (e.target.getAttribute(`href`) == `contact.html`) {
+    window.open("contact.html", "_self");
+    return;
+  }
   // Matching strategy
   if (e.target.classList.contains("nav__link")) {
     const id = e.target.getAttribute("href");
