@@ -722,6 +722,19 @@ table {
   .nav {
     padding: 0 0.25rem;
   }
+  .modal {
+    max-width: 80%;
+    max-height: 80%;
+    padding: 5%;
+  }
+  .modal__form {
+    margin: 0;
+    gap: 0;
+    display: block;
+  }
+  .modal__header {
+    font-size: 2rem;
+  }
 }
 .privacy {
   padding: 10%;
