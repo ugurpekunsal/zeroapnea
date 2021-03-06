@@ -24,7 +24,7 @@ html {
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 300;
   color: #444;
   line-height: 1.9;
@@ -213,7 +213,7 @@ h4 {
 
 .highlight::after {
   display: block;
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -466,7 +466,7 @@ h4 {
 }
 
 .testimonial::before {
-  content: '\201C';
+  content: "\201C";
   position: absolute;
   top: -5.7rem;
   left: -6.8rem;
@@ -670,6 +670,11 @@ table {
   padding: 0 10%;
 }
 
+.testimonials {
+  text-align: center;
+  padding: 10%;
+}
+
 @media only screen and (max-width: 600px) {
   table {
     padding: 0;
@@ -703,6 +708,19 @@ table {
   }
   .operations__content--active {
     padding: 0;
+  }
+  .header__title {
+    padding: 5%;
+  }
+  .nav__links a:not(:first-child) {
+    display: none;
+  }
+  .nav__links a.icon {
+    float: right;
+    display: block;
+  }
+  .nav {
+    padding: 0 0.25rem;
   }
 }
 .privacy {
