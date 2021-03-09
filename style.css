@@ -35,7 +35,6 @@ body {
 .section {
   padding: 15rem 3rem;
   border-top: 1px solid #ddd;
-
   transition: transform 1s, opacity 1s;
 }
 
@@ -268,7 +267,6 @@ h4 {
 /* OPERATIONS */
 .operations {
   max-width: 100rem;
-  margin: 12rem auto 0 auto;
 
   background-color: #fff;
 }
@@ -561,7 +559,8 @@ h4 {
 }
 
 table {
-  padding: 0 10%;
+  max-width: 80rem;
+  margin: 0 auto;
 }
 
 .testimonials {
@@ -632,7 +631,7 @@ table {
   }
   .header {
     padding: 0;
-    height: 75vh;
+    height: auto;
   }
 
   .header__title {
