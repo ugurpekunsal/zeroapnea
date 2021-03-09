@@ -565,7 +565,8 @@ table {
 
 .testimonials {
   text-align: center;
-  padding: 10%;
+  max-width: 80rem;
+  margin: 0 auto;
 }
 
 @media only screen and (max-width: 768px) {
@@ -641,6 +642,7 @@ table {
   .operations {
     border-radius: 25px;
     padding: 1rem;
+    max-width: 80rem;
   }
   .operations__tab {
     margin: 0;
@@ -677,9 +679,10 @@ table {
 }
 
 .privacy {
-  padding: 10%;
   font-size: medium;
   padding-top: 10rem;
+  max-width: 80rem;
+  margin: 0 auto;
 }
 
 #contact__form {
