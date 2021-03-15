@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Zero Apnea | Helping those in need.</title>
+
+    <script defer src="script.js"></script>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <style>
+      .header {
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav" id="myNav">
+        <a href="index.html">
+          <img
+            src="img/logo.png"
+            alt="Zero Apnea Logo"
+            class="nav__logo"
+            id="logo"
+            designer="Ian"
+          />
+        </a>
+
+        <div class="nav__links">
+          <a class="nav__link" href="index.html">Main Page</a>
+          <a class="nav__link" href="about.html">About the Program</a>
+          <a class="nav__link" href="why.html">Why Donate?</a>
+          <a class="nav__link" href="need.html">I Need a Machine</a>
+          <a class="nav__link" href="education.html">Education & Resources</a>
+          <a class="nav__link" href="news.html">Latest News</a>
+          <a class="nav__link" href="contact.html">Contact Us</a>
+          <a class="nav__link nav__link--btn btn--show-modal" href="#"
+            >Schedule a Pick-up</a
+          >
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars" id="exceptThis"></i>
+        </a>
+      </nav>
+    </header>
+
+    <section class="section" id="section--2">
+      <div class="section__title">
+        <h2 class="section__description">I Need a Machine</h2>
+        <ol>
+          <p>
+            If you have been diagnosed with sleep apnea, have a valid
+            prescription and cannot afford therapy (no insurance, fixed income),
+            we can add you to our wait list to receive a refurbished sleep apnea
+            machine. To be added to our waitlist, please contact M. Teague
+            email info@zeroapnea.org You will need to do three things:
+          </p>
+          <li>
+            <p>
+              Provide us with a signed waiver form - you can download it HERE
+              <br /><i>
+                (Need a server to upload documents, alternatively I can find 3rd
+                party solution -Ian)
+              </i>
+            </p>
+          </li>
+          <li>
+            <p>Provide us with a valid prescription from your doctor (an RX)</p>
+          </li>
+          <li>
+            <p>
+              Agree that if you accept a machine from the Zeroapnea.org and no
+              longer use that machine, you will donate it back
+            </p>
+          </li>
+        </ol>
+        <p>
+          We will make the trip to pick-up your CPAP or BiPAP machine and
+          provide you with a disclaimer and limitation of liability clause as
+          part of your donation.
+        </p>
+      </div>
+    </section>
+
+    <section class="section section--sign-up">
+      <div class="section__title">
+        <h3 class="section__header">Saving Lives Through Better Sleep</h3>
+      </div>
+      <button class="btn btn--show-modal">Please Contact Me</button>
+    </section>
+
+    <footer class="footer">
+      <ul class="footer__nav">
+        <li class="footer__item">
+          <a class="footer__link" href="contact.html">Contact Us</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="privacy_policy.html">Privacy Policy</a>
+        </li>
+      </ul>
+      <img src="img/logo-white.png" alt="Logo" class="footer__logo" />
+      <p class="footer__copyright">
+        &copy; Copyright 2021 Zero Apnea <br />Designed by
+        <a
+          class="footer__link website-link"
+          target="_blank"
+          href="https://pknsl.com"
+          >PKNSL</a
+        >
+      </p>
+    </footer>
+
+    <div class="modal hidden">
+      <button class="btn--close-modal">&times;</button>
+      <h2 class="modal__header">
+        Start donating <br />
+        in just <span class="highlight">5 minutes</span>
+      </h2>
+      <form
+        action="https://formspree.io/f/meqpbbvd"
+        method="POST"
+        class="modal__form"
+      >
+        <label>First Name</label>
+        <input type="text" />
+        <label>Last Name</label>
+        <input type="text" />
+        <label>Email Address</label>
+        <input type="text" name="_replyto" />
+        <label> Your message:</label>
+        <textarea name="message"></textarea>
+        <!-- your other form fields go here -->
+        <button type="submit" class="btn">Send</button>
+      </form>
+    </div>
+    <div class="overlay hidden"></div>
+  </body>
+</html>
