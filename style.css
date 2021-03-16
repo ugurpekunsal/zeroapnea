@@ -663,7 +663,7 @@ textarea {
 .education_links {
   text-align: center;
   margin: 2rem 0;
-  width: 50rem;
+  width: 100%;
   height: fit-content;
   background-color: rgba(0, 128, 0, 0.267);
   border-radius: 50px;
