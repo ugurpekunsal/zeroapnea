@@ -26,9 +26,9 @@
     <meta name="theme-color" content="#ffffff" />
   </head>
   <body>
-    <header class="header">
-      <nav class="nav" id="myNav">
-        <a href="index.html">
+    <header>
+      <div class="topnav" id="myTopnav">
+        <a id="logo" href="index.html">
           <img
             src="img/logo.png"
             alt="Zero Apnea Logo"
@@ -37,24 +37,40 @@
             designer="Ian"
           />
         </a>
-
-        <div class="nav__links">
-          <a class="nav__link" href="index.html">Main Page</a>
-          <a class="nav__link" href="about.html">About the Program</a>
-          <a class="nav__link" href="why.html">Why Donate?</a>
-          <a class="nav__link" href="need.html">I Need a Machine</a>
-          <a class="nav__link" href="education.html">Education & Resources</a>
-          <a class="nav__link" href="news.html">Latest News</a>
-          <a class="nav__link" href="contact.html">Contact Us</a>
-          <a class="nav__link nav__link--btn btn--show-modal" href="#"
-            >Schedule a Pick-up</a
-          >
+        <a href="contact.html" class="active">Contact</a>
+        <div class="dropdown">
+          <button class="dropbtn">
+            Extra Resources
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="education.html">Education</a>
+            <a href="news.html">Latest News</a>
+          </div>
         </div>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars" id="exceptThis"></i>
-        </a>
-      </nav>
+        <div class="dropdown">
+          <button class="dropbtn">
+            About
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="about.html">About the Program</a>
+            <a href="why.html">Why Donate?</a>
+            <a href="need.html">I Need a Machine</a>
+          </div>
+        </div>
+        <a href="index.html">Home Page</a>
+        <a
+          href="javascript:void(0);"
+          style="font-size: 15px"
+          class="icon"
+          onclick="myFunction()"
+          >&#9776;</a
+        >
+      </div>
+    </header>
 
+    <header class="header">
       <div class="header__title">
         <!-- <h1 onclick="alert('HTML alert')"> -->
 
@@ -348,20 +364,13 @@
     <!-- <script src="script.js"></script> -->
     <script>
       function myFunction() {
-        var x = document.getElementById("myNav");
-        if (x.className === "nav") {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
           x.className += " responsive";
         } else {
-          x.className = "nav";
+          x.className = "topnav";
         }
       }
-      document.addEventListener(`click`, function (event) {
-        if (event.target != document.getElementById(`exceptThis`)) {
-          var x = document.getElementById("myNav");
-          x.className = "nav";
-          console.log("works");
-        }
-      });
     </script>
   </body>
 </html>

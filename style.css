@@ -113,17 +113,6 @@ img {
 }
 
 /* NAVIGATION */
-.nav {
-  position: fixed;
-  background-color: darkgrey;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 9rem;
-  width: 100%;
-  padding: 0 6rem;
-  z-index: 100;
-}
 
 .nav__logo {
   height: 8rem;
@@ -643,11 +632,11 @@ textarea {
   background: #444444;
 }
 .title_top {
+  font-weight: bolder;
   font-size: x-large;
   text-align: center;
-  color: #666;
+  color: black;
   grid-row: 1 / span 1;
-  margin-top: 10%;
 }
 .social_links {
   text-align: right;
@@ -705,66 +694,12 @@ td {
   h1 {
     font-size: 2rem;
   }
-  .nav__links {
-    display: block;
-  }
-  .nav__link:link {
-    display: initial;
-    font-size: 2rem;
-  }
-  .nav.sticky {
-    padding: 0 6rem;
-    padding-top: 0px;
-    padding-right: 6rem;
-    padding-bottom: 0px;
-    padding-left: 6rem;
-    margin-right: 5rem;
-  }
-  .nav__links a:not(:first-child) {
-    display: none;
-  }
-  .nav__links a.icon {
-    float: right;
-    display: block;
-  }
-  .nav {
-    padding: 0 0.25rem;
-    display: inline-flex;
-    position: fixed;
-  }
-  .nav a:not(:first-child) {
-    display: none;
-  }
-  .nav a.icon {
-    float: right;
-    display: block;
-  }
-  .nav.responsive {
-    background-color: darkgrey;
-  }
-  .nav.responsive .nav__links {
-    padding: 5%;
-    border-radius: 25px;
-    margin-top: 200px;
-    margin-right: 25px;
-  }
-  .nav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .nav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
   .header {
     padding: 0;
     height: auto;
   }
 
   .header__title {
-    margin-top: 15rem;
     padding: 5%;
   }
   .operations {
@@ -813,28 +748,29 @@ td {
     padding: 0;
   }
 }
-.topnav {
-  overflow: hidden;
-  background-color: darkgrey;
-}
 #logo {
   float: left;
   padding: 0.25rem;
 }
+.topnav {
+  overflow: hidden;
+  background-color: darkgrey;
+  width: 100%;
+}
+
 .topnav a {
+  height: 8rem;
   float: right;
   display: block;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
-  padding-top: 2.5rem;
+  padding: 2.5rem 16px;
   text-decoration: none;
   font-size: 17px;
-  height: 8.5rem;
 }
 
 .active {
-  background-color: #4caf50;
+  background-color: darkgrey;
   color: white;
 }
 
@@ -845,10 +781,10 @@ td {
 .dropdown {
   float: right;
   overflow: hidden;
-  height: 8.5rem;
 }
 
 .dropdown .dropbtn {
+  height: 8rem;
   font-size: 17px;
   border: none;
   outline: none;
@@ -857,16 +793,15 @@ td {
   background-color: inherit;
   font-family: inherit;
   margin: 0;
-  padding-top: 2.6rem;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: #4caf50;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
+  border-radius: 0 0 5rem 5rem;
 }
 
 .dropdown-content a {
@@ -907,19 +842,24 @@ td {
 @media screen and (max-width: 600px) {
   .topnav.responsive {
     position: relative;
+    background-color: darkgrey;
   }
   .topnav.responsive .icon {
     position: absolute;
     right: 0;
     top: 0;
+    padding: 2rem;
+    margin-right: 0;
   }
   .topnav.responsive a {
+    margin-right: 5rem;
     float: none;
     display: block;
-    text-align: left;
+    text-align: right;
   }
   .topnav.responsive .dropdown {
     float: none;
+    margin-right: 5rem;
   }
   .topnav.responsive .dropdown-content {
     position: relative;
@@ -927,6 +867,6 @@ td {
   .topnav.responsive .dropdown .dropbtn {
     display: block;
     width: 100%;
-    text-align: left;
+    text-align: right;
   }
 }
