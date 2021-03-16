@@ -915,6 +915,9 @@ td {
   .topnav a.active {
     display: none;
   }
+  .topnav.responsive a.active {
+    display: none;
+  }
 }
 
 .cpap img {
