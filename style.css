@@ -494,9 +494,9 @@ h4 {
 }
 
 .modal__form {
+  text-align: left;
   margin: 0 3rem;
   display: grid;
-  grid-template-columns: 1fr 2fr;
   align-items: center;
   gap: 2.5rem;
 }
@@ -508,6 +508,7 @@ h4 {
 }
 
 .modal__form * {
+  margin-left: 10%;
   font-size: 1.7rem;
   padding: 1rem 1.5rem;
   border: 1px solid #ddd;
@@ -576,6 +577,9 @@ table {
 #contact__form {
   display: grid;
   max-width: 100%;
+}
+.form-submit {
+  grid-column: 1;
 }
 
 input,
@@ -834,6 +838,19 @@ td {
     position: absolute;
     right: 0;
     display: block;
+  }
+  .modal__form * {
+    margin-left: 0;
+    font-size: 50%;
+  }
+  .modal__form label {
+    font-size: 50%;
+  }
+  .modal__header {
+    margin: 0;
+  }
+  .modal {
+    width: 80%;
   }
 }
 
