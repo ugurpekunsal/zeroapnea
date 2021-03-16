@@ -273,24 +273,76 @@
     <div class="modal hidden">
       <button class="btn--close-modal">&times;</button>
       <h2 class="modal__header">
-        Start donating <br />
+        Recycle your CPAP <br />
         in just <span class="highlight">5 minutes</span>
       </h2>
       <form
-        action="https://formspree.io/f/meqpbbvd"
-        method="POST"
         class="modal__form"
+        id="contact__form"
+        id="fs-frm"
+        name="registration-form"
+        accept-charset="utf-8"
+        action="https://formspree.io/f/meqpbbvd"
+        method="post"
       >
-        <label>First Name</label>
-        <input type="text" />
-        <label>Last Name</label>
-        <input type="text" />
-        <label>Email Address</label>
-        <input type="text" name="_replyto" />
-        <label> Your message:</label>
-        <textarea name="message"></textarea>
-        <!-- your other form fields go here -->
-        <button type="submit" class="btn">Send</button>
+        <fieldset id="fs-frm-inputs">
+          <label class="modal__form label" for="full-name">Your Name</label>
+          <input
+            type="text"
+            name="name"
+            S
+            id="full-name"
+            placeholder="Name"
+            required=""
+          />
+          <br />
+          <label for="email-address">Email Address</label><br />
+          <input
+            type="email"
+            name="_replyto"
+            id="email-address"
+            placeholder="email@domain.tld"
+            required=""
+          /><br />
+          <label for="city">City</label><br />
+          <input
+            type="text"
+            name="city"
+            id="city"
+            placeholder="City"
+            required=""
+          /><br />
+          <label for="brand">Brand of Your Equipment, Model Name</label><br />
+          <input
+            type="text"
+            name="brand"
+            id="brand"
+            placeholder="Brand"
+            required=""
+          /><br />
+          <label for="age">Approximate Age of Your Equipment</label><br />
+          <input
+            type="text"
+            name="age"
+            id="age"
+            placeholder="Age"
+            required=""
+          /><br />
+          <label for="note">Message</label><br />
+          <textarea
+            rows="2"
+            name="note"
+            id="note"
+            placeholder="Include any additional information"
+          ></textarea>
+          <input
+            type="hidden"
+            name="_subject"
+            id="email-subject"
+            value="Registration Form Submission"
+          /><br />
+        </fieldset>
+        <input class="form-submit btn" type="submit" value="Send" />
       </form>
     </div>
     <div class="overlay hidden"></div>

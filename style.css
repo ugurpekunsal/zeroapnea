@@ -495,7 +495,7 @@ h4 {
 
 .modal__form {
   text-align: left;
-  margin: 0 3rem;
+  margin: 0;
   display: grid;
   align-items: center;
   gap: 2.5rem;
@@ -823,6 +823,7 @@ td {
 .dropdown-content a:hover {
   background-color: #378139;
   color: black;
+  border-radius: 5rem;
 }
 
 .dropdown:hover .dropdown-content {
@@ -905,10 +906,23 @@ td {
     width: 100%;
     text-align: right;
   }
+  .cpap img {
+    width: 60%;
+  }
 }
 
 @media screen and (max-width: 444px) {
   .topnav a.active {
     display: none;
   }
+}
+
+.cpap img {
+  width: 80%;
+}
+.cpap table {
+  padding: 0;
+}
+.cpap td {
+  padding: 0;
 }
