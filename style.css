@@ -888,3 +888,9 @@ td {
     text-align: right;
   }
 }
+
+@media screen and (max-width: 444px) {
+  .topnav a.active {
+    display: none;
+  }
+}
