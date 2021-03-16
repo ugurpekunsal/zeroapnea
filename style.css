@@ -145,8 +145,6 @@ img {
 
 .nav__link--btn:link,
 .nav__link--btn:visited {
-  padding: 0.8rem 2.5rem;
-  border-radius: 3rem;
   background-color: var(--color-primary);
   color: #222;
 }
@@ -571,7 +569,6 @@ table {
 
 .privacy {
   font-size: medium;
-  padding-top: 10rem;
   max-width: 80rem;
   margin: 0 auto;
 }
@@ -820,7 +817,7 @@ td {
 }
 
 .dropdown-content a:hover {
-  background-color: #ddd;
+  background-color: #378139;
   color: black;
 }
 
@@ -828,18 +825,39 @@ td {
   display: block;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 815px) {
   .topnav a:not(:first-child),
   .dropdown .dropbtn {
     display: none;
   }
   .topnav a.icon {
-    float: right;
+    position: absolute;
+    right: 0;
     display: block;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 815px) {
+  .topnav a {
+    float: right;
+  }
+  .topnav #pick-up {
+    display: block;
+    text-align: center;
+    position: relative;
+    right: 5rem;
+  }
+  .topnav.responsive #pick-up,
+  .topnav.responsive a.active {
+    display: block;
+    position: relative;
+    right: 0rem;
+  }
+  .topnav a.active {
+    display: block;
+    position: relative;
+    right: 5rem;
+  }
   .topnav.responsive {
     position: relative;
     background-color: darkgrey;
