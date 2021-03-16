@@ -840,7 +840,8 @@ td {
     display: block;
   }
   .modal__form * {
-    margin-left: 0;
+    margin-left: 10%;
+    margin-right: 10%;
     font-size: 50%;
   }
   .modal__form label {
