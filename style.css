@@ -642,11 +642,12 @@ textarea {
 .social_links {
   text-align: right;
   align-items: center;
-  position: absolute;
+  position: relative;
+  float: right;
   width: fit-content;
   max-width: fit-content;
   bottom: 10%;
-  right: 30%;
+  left: 50%;
 }
 
 .social_link {
