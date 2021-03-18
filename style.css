@@ -172,7 +172,10 @@ img {
   align-items: start;
   justify-items: start;
 }
-
+#frontpage_image {
+  width: 50%;
+  text-align: center;
+}
 h1 {
   font-size: 5.5rem;
   line-height: 1.35;
@@ -821,6 +824,12 @@ td {
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+@media screen and (min-width: 1024px) {
+  #frontpage_image {
+    width: 25%;
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 815px) {
