@@ -565,7 +565,7 @@ table {
 .privacy {
   font-size: medium;
   max-width: 80rem;
-  margin: 0 auto;
+  margin: 0 10rem;
 }
 
 #contact__form {
@@ -824,6 +824,9 @@ td {
 }
 
 @media screen and (max-width: 815px) {
+  .privacy {
+    margin: 0 1rem;
+  }
   .topnav a:not(:first-child),
   .dropdown .dropbtn {
     display: none;
