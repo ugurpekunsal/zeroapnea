@@ -166,12 +166,6 @@ img {
 }
 
 .header__title {
-  flex: 1;
-
-  max-width: 115rem;
-  display: grid;
-  grid-template-columns: 3fr 2fr;
-  row-gap: 3rem;
   align-content: center;
   justify-content: center;
 
@@ -640,14 +634,13 @@ textarea {
   grid-row: 1 / span 1;
 }
 .social_links {
-  text-align: right;
-  align-items: center;
   position: relative;
+  text-align: right;
+  bottom: 10rem;
+  align-items: center;
   float: right;
   width: fit-content;
   max-width: fit-content;
-  bottom: 10%;
-  left: 50%;
 }
 
 .social_link {
@@ -734,7 +727,7 @@ td {
     font-size: 2rem;
   }
   .social_links {
-    position: unset;
+    bottom: 4rem;
     grid-column: 1 / span 2;
   }
   .title_top {
@@ -744,7 +737,6 @@ td {
   .header__img {
     grid-column: 2 / -1;
     grid-row: 2 / span 4;
-    margin-top: 10rem;
   }
   .section {
     padding: 5%;

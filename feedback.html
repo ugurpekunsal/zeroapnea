@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Zero Apnea | Helping those in need.</title>
+
+    <script defer src="script.js"></script>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <style>
+      .header {
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="topnav" id="myTopnav">
+        <a id="logo" href="index.html">
+          <img
+            src="img/logo.png"
+            alt="Zero Apnea Logo"
+            class="nav__logo"
+            id="logo"
+            designer="Ian"
+          />
+        </a>
+        <a
+          class="nav__link nav__link--btn btn--show-modal"
+          id="pick-up"
+          href="#"
+          >Schedule a Pick-up</a
+        >
+        <a href="education.html" class="active">Education</a>
+        <a href="contact.html">Contact</a>
+        <div class="dropdown">
+          <button class="dropbtn">
+            Extra Resources
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="education.html">Education</a>
+            <a href="news.html">Latest News</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">
+            About
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="about.html">About the Program</a>
+            <a href="why.html">Why Donate?</a>
+            <a href="need.html">I Need a Machine</a>
+            <a href="feedback.html">Your Feedback</a>
+          </div>
+        </div>
+        <a href="index.html">Home Page</a>
+        <a
+          href="javascript:void(0);"
+          style="font-size: 15px"
+          class="icon"
+          onclick="myFunction()"
+          >&#9776;</a
+        >
+      </div>
+    </header>
+
+    <section class="section" id="section--2">
+      <h1>Please leave your feedback:<br /><br /></h1>
+      <!-- begin wwww.htmlcommentbox.com -->
+      <div id="HCB_comment_box">
+        <a href="http://www.htmlcommentbox.com"></a> is loading comments...
+      </div>
+      <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0"
+      />
+      <script type="text/javascript" id="hcb">
+        /*<!--*/ if (!window.hcb_user) {
+          hcb_user = {};
+        }
+        (function () {
+          var s = document.createElement("script"),
+            l = hcb_user.PAGE || ("" + window.location).replace(/'/g, "%27"),
+            h = "https://www.htmlcommentbox.com";
+          s.setAttribute("type", "text/javascript");
+          s.setAttribute(
+            "src",
+            h +
+              "/jread?page=" +
+              encodeURIComponent(l).replace("+", "%2B") +
+              "&opts=16862&num=10&ts=1616081983931"
+          );
+          if (typeof s != "undefined")
+            document.getElementsByTagName("head")[0].appendChild(s);
+        })(); /*-->*/
+      </script>
+      <!-- end www.htmlcommentbox.com -->
+    </section>
+
+    <section class="section section--sign-up">
+      <div class="section__title">
+        <h3 class="section__header">Saving Lives Through Better Sleep</h3>
+      </div>
+      <button class="btn btn--show-modal">Please Contact Me</button>
+    </section>
+
+    <footer class="footer">
+      <ul class="footer__nav">
+        <li class="footer__item">
+          <a class="footer__link" href="contact.html">Contact Us</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="privacy_policy.html">Privacy Policy</a>
+        </li>
+      </ul>
+      <img src="img/logo-white.png" alt="Logo" class="footer__logo" />
+      <p class="footer__copyright">
+        &copy; Copyright 2021 Zero Apnea <br />Designed by
+        <a
+          class="footer__link website-link"
+          target="_blank"
+          href="https://pknsl.com"
+          >PKNSL</a
+        >
+      </p>
+    </footer>
+
+    <div class="modal hidden">
+      <button class="btn--close-modal">&times;</button>
+      <h2 class="modal__header">
+        Recycle your CPAP <br />
+        in just <span class="highlight">5 minutes</span>
+      </h2>
+      <form
+        class="modal__form"
+        id="contact__form"
+        id="fs-frm"
+        name="registration-form"
+        accept-charset="utf-8"
+        action="https://formspree.io/f/xaylrkqp"
+        method="post"
+      >
+        <fieldset id="fs-frm-inputs">
+          <label class="modal__form label" for="full-name">Your Name</label>
+          <input
+            type="text"
+            name="name"
+            S
+            id="full-name"
+            placeholder="Name"
+            required=""
+          />
+          <br />
+          <label for="email-address">Email Address</label><br />
+          <input
+            type="email"
+            name="_replyto"
+            id="email-address"
+            placeholder="email@domain.tld"
+            required=""
+          /><br />
+          <label for="city">City</label><br />
+          <input
+            type="text"
+            name="city"
+            id="city"
+            placeholder="City"
+            required=""
+          /><br />
+          <label for="brand">Brand of Your Equipment, Model Name</label><br />
+          <input
+            type="text"
+            name="brand"
+            id="brand"
+            placeholder="Brand"
+            required=""
+          /><br />
+          <label for="age">Approximate Age of Your Equipment</label><br />
+          <input
+            type="text"
+            name="age"
+            id="age"
+            placeholder="Age"
+            required=""
+          /><br />
+          <label for="note">Message</label><br />
+          <textarea
+            rows="2"
+            name="note"
+            id="note"
+            placeholder="Include any additional information"
+          ></textarea>
+          <input
+            type="hidden"
+            name="_subject"
+            id="email-subject"
+            value="Registration Form Submission"
+          /><br />
+        </fieldset>
+        <input class="form-submit btn" type="submit" value="Send" />
+      </form>
+    </div>
+    <div class="overlay hidden"></div>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+  </body>
+</html>
