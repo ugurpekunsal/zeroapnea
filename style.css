@@ -567,8 +567,11 @@ table {
 
 .privacy {
   font-size: medium;
-  max-width: 80rem;
   margin: 0 10rem;
+}
+
+li > p {
+  padding: 0;
 }
 
 #contact__form {
@@ -932,5 +935,8 @@ td {
   padding: 0;
 }
 .cpap td {
+  padding: 0;
+}
+ul {
   padding: 0;
 }
